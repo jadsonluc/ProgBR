@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    margin: 15px;
+}
+
+header > p {
+    margin: 0px 0px 15px 15px;
+}
+
+hr {
+    margin: 15px;
+}
+
+h2 {
+    margin: 25px 0px 15px 15px ;
+}
+
+body > p {
+    margin: 15px;
+}
+
+ul {
+    margin: 15px;
+    padding: 0px 0px 0px 15px;
+}
+
+a:hover {
+    color: brown;
+    background-color: lightgray;
+    border-radius: 5px;
+}
+
+#git:hover {
+    color: blue;
+    background-color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+#git {
+    color: white;
+    background-color: rgba(0, 38, 255, 0.767);
+    border-radius: 3px;
+    text-decoration: none;
+}
