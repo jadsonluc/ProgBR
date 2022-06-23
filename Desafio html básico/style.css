@@ -32,20 +32,17 @@ ul {
 
 a {
     text-decoration: none;
-    font-family: a;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 a:hover {
-    color: brown;
-    background-color: lightgray;
+    padding: 0px 5px 0px 5px;
+    background-color: rgba(211, 211, 211, 0.404);
     border-radius: 5px;
 }
 
 #git:hover {
-    color: blue;
-    background-color: white;
     font-weight: bolder;
-    text-decoration: none;
 }
 
 #git {
@@ -54,4 +51,22 @@ a:hover {
     border-radius: 3px;
     text-decoration: none;
     padding: 0px 3px 0px 3px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#botao_inicio {
+    background-image: linear-gradient(to right, blue, lightblue);
+    border-radius: 5px;
+    padding: 0px 5px 0px 5px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#botao_inicio:hover {
+    font-weight: bold;
+}
+
+#central {
+    text-align: center;
+    margin-bottom: 5px;
 }
