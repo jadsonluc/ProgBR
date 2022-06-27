@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+    <style>
+
+        body {
+            font-size: 2em;
+        }
+
+        .card {
+            position: relative;
+            width: 400px;
+            height: 200px;
+            border: 2px solid green;
+            float: left;
+            text-align: center;
+        }
+
+        .card2 {
+            clear: left;
+            border: 1px solid green;
+            float: left;
+            padding: 100px 150px 100px 150px;
+            
+        }
+
+        .c1 {
+            background-color: lightgray;
+            line-height: 200px;
+        }
+
+        .c2 {
+            background-color: lightsteelblue;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="c1">
+            Jadson Lucas
+        </div>
+    </div>
+    <div class="card">
+        <div class="c2">
+            Jadson Lucas
+        </div>
+    </div>
+    <div class="card2">
+        <div>
+            Jadson Lucas
+        </div>
+    </div>
+</body>
+</html>
