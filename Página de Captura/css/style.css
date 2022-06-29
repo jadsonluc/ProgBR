@@ -72,3 +72,28 @@ select {
     background-position-y: center;
 }
 
+footer {
+    background-color: #202121;
+    padding: 40px;
+    text-align: center;
+}
+
+.picture {
+    width: 150px;
+}
+
+.description {
+    color: white;
+    display: inline-block;
+    max-width: 40%;
+    margin-left: 40px;
+    text-align: left;
+}
+
+.description p, .description h3 {
+    margin-bottom: 15px;
+}
+
+.description h3 {
+    font-size: 22px;
+}
