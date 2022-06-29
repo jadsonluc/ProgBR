@@ -97,3 +97,23 @@ footer {
 .description h3 {
     font-size: 22px;
 }
+
+@media screen and (max-width: 500px) {
+    .formContainer {
+        float: none;
+        margin: auto;
+    }
+
+    .picture {
+        width: 120px;
+        display: inline-block;
+        margin-bottom: 30px;
+        margin-left: 40px;
+    }
+
+    .description {
+        text-align: justify, center;
+        display: inline;
+
+    }
+}
