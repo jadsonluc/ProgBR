@@ -6,7 +6,7 @@ for (var vez = 1; vez <= numero; vez++) {
 
 console.log("Acabou")
 
-while (numero < 8) {
+while (numero > 1) {
     console.log(`Número ${numero}`)
     numero++;
 }
