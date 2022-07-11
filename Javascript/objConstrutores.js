@@ -1,4 +1,3 @@
-
 function criarAluno(nome, n1, n2) {
     return {
         nome: nome,
@@ -8,24 +7,14 @@ function criarAluno(nome, n1, n2) {
           return (this.nota1 + this.nota2) / 2
 }}}
 
-/*var calcMedia = function() {
-    return (this.nota1 + this.nota2) / 2
-}
-
 var turma = [
-         {nome: "Jadson",
-          nota1: 9,
-          nota2: 9.3,
-          media: calcMedia},
-
-          {nome: "João",
-          not1: 8,
-          nota2: 9.3,
-          media: calcMedia}
+    criarAluno("Jadson", 9, 8.6),
+    criarAluno("João", 9, 8),
+    criarAluno("Marcela", 8.8, 7)
 ]
- var aluno = turma[1]*/
-var aluno = criarAluno("Jadson", 9, 8.5///////////////////////////////////////////////////////////////////////////////////////////////////)
- console.log(aluno)
- console.log(aluno.media())
+
+for (var alunos of turma){
+    console.log(alunos.nome + " - " + alunos.media())
+}
 
 
