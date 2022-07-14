@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temporizadores</title>
+    <script>
+
+        var numero = 0
+        var interval
+
+       function atualizarTexto() {
+            let h = document.getElementsByTagName("h1")[0]
+            h.innerHTML += " " + numero
+            numero++
+       }
+
+        function iniciar() {
+           interval = setInterval(atualizarTexto, 1000)
+        }
+
+        function parar() {
+            clearInterval(interval)
+        }
+    </script>
+</head>
+<body>
+    <h1>Título</h1>
+    <input type="submit" value="Iniciar" onclick="iniciar()">
+    <input type="submit" value="Parar" onclick="parar()">
+</body>
+</html>
