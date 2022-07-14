@@ -23,10 +23,10 @@
             let h1 = document.getElementById("acao")
             //h1.innerHTML = tarefa
             localStorage.setItem("acao", tarefa)
-            
-            h1.innerHTML = tarefa
-            let lista = []
-            lista = tarefa
+            let lista = [tarefa]
+            localStorage.setItem('tarefa', lista)
+            let list = localStorage.getItem("tarefa")
+            //let lista = [tarefa]
             console.log(lista)
         } 
     </script>
