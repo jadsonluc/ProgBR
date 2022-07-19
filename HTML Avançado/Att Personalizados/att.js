@@ -8,7 +8,9 @@ image.addEventListener("click", function(){
 })
 
 let lista = document.getElementById("lista")
-let num = Number(lista.getAttribute("num"))
+lista.dataset.num = "8"
+let num = Number(lista.dataset.num)
+console.log(num)
 let conteudo = ""
 
 for ( let i = 1; i <= num; i++) {
