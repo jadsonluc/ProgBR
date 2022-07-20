@@ -1,0 +1,38 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.container {
+    position: relative;
+    width: 520px;
+    height: 320px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.video {
+    width: 100%;
+}
+
+.controle {
+    display: none;
+}
+
+.btn {
+    position: relative;
+    top: 65%;
+    width: 35px;
+    margin: 10px;
+    
+}
+
+#video1:hover + .controle {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: block;
+}
+
