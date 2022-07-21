@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    background-color: gray;
+    height: 400px;
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.r1 {
+    background-color: lightsalmon;
+}
+
+.r2 {
+    background-color: lightgrey;
+}
+
+.r3 {
+    background-color: lightblue;
+}
+
+.rect {
+    width: 100px;
+    height: 100px;
+}

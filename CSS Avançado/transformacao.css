@@ -1,0 +1,12 @@
+/*Usamos imagens mas podemos usar essa técnica para qualquer tipo de elemento*/
+/*Aproveitando para falar de compatibilidade, para navegadores desatualizados podemos usar um site para checar préfixos e tornar meus códigos compatível com outros navegadores(https://shouldiprefix.com/#transforms)*/
+
+img, div {
+    border: solid 1px black;
+    /*transform: rotate(180deg);/*rotaciona a imagem*/
+    /*transform: scale(1, 0.8);/*modifica a proporção da imagem scale(x, y)*/
+    /*Podemos juntar tudo*/
+    transform: rotate(180deg) scale(2, 2.5) skew(45deg);
+    -webkit-transform: rotate(180deg) scale(2, 2.5) skew(45deg);
+    -ms-transform: rotate(180deg) scale(2, 2.5) skew(45deg);
+}
