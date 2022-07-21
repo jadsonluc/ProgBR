@@ -1,0 +1,15 @@
+input:focus {
+    /*Apenas quando tiver sendo utilizado o texto ele fica red*/
+    color: red;
+}
+
+li:first-child {
+    /*Apenas o primeiro item da lista fica blue*/
+    color: blue;
+}
+
+li:first-of-type {
+    /*O primeiro elemento do tipo 'li' fica com cor de fundo marrom*/
+    background-color: brown;
+}
+

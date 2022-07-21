@@ -31,3 +31,18 @@ section ~ p {
     /*Seleciona todos os title com a palavra titulo*/
     background-color: lightgoldenrodyellow;
 }
+
+[title^="ti"] {
+    /*Seleciona todos os title que começam com 'ti'*/
+    color: burlywood;
+}
+
+[title$="3"] {
+    /*Seleciona todos os title que terminam com '3'*/
+    border-radius: 10px;
+}
+
+[title*="graf"] {
+    /*Seleciona todos os title que contem em algum lugar do seu nome uma parte com 'graf'*/
+    background-color: bisque;
+}
