@@ -3,13 +3,40 @@ input:focus {
     color: red;
 }
 
+li {
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+
 li:first-child {
-    /*Apenas o primeiro item da lista fica blue*/
+    /*Apenas o primeiro item da lista fica blue - leva-se em conta o h1*/
     color: blue;
 }
 
 li:first-of-type {
     /*O primeiro elemento do tipo 'li' fica com cor de fundo marrom*/
     background-color: brown;
+}
+
+li:nth-child(3) {
+    /*Apenas os terceiros elementos das listas ficam com cor de fundo blue - leva-se em conta o h1*/
+    background-color: blue;
+}
+
+li:nth-of-type(4) {
+    /*Apenas os quartos elementos das lista ficam com cor de fundo aquamarine*/
+    background-color: aquamarine;
+}
+
+li:nth-last-child(1) {
+    /*Seleciona os elementos de tras pra frente, se colocamos o 1 ele pega o ultimo elemento e assim por diante*/
+    background-color: beige;
+}
+
+li:nth-of-type(3n){
+    /*Seleciona apenas os multiplos de 3, inclusive posso usar 3n-2, por exemplo, pra começar a partir do primeiro elemento. faça o teste!*/
+    background-color: black;
+    color: white;
 }
 
