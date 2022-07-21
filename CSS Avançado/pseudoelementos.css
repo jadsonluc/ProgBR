@@ -1,0 +1,43 @@
+p::first-line {
+    color: red;
+}
+
+p::first-letter {
+    color: blue;
+}
+
+h1::first-letter {
+    color: orange;
+    font-size: 5em;
+}
+
+li {
+    list-style: none;
+}
+/*assim consigo dimensionar imagens para lista*/
+li::before {
+    content: "";
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background-image: url(imagens/iscold.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+li::after {
+    content: "";
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background-image: url(imagens/iscold.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+/*Bem legal*/
+P::selection {
+    background-color: lightslategray;
+    color: white;
+}

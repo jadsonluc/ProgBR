@@ -1,0 +1,33 @@
+* {
+    background-color: lightblue;
+}
+
+section + p {
+    /*Seleciona apenas um único <p> elemento que vem logo após a section*/
+    background-color: gray;
+}
+
+section ~ p {
+    /*Seleciona todos os elementos <p> que vem logo após a section*/
+    color: white;
+}
+
+[width] {
+    /*Seleciona todos os elementos que recebe o atributo WIDTH*/
+    background-color: lightcoral;
+}
+
+[width="300"] {
+    /*Seleciona todos os elementos que recebeu o atributo width com tamanho 300*/
+    color: brown;
+}
+
+[width="500"] {
+    /*Seleciona todos os elementos que recebeu o atributo width com tamanho 500*/
+    color: lightpink;
+}
+
+[title~="titulo"] {
+    /*Seleciona todos os title com a palavra titulo*/
+    background-color: lightgoldenrodyellow;
+}
