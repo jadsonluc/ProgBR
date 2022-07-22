@@ -1,0 +1,14 @@
+
+@keyframes changeColor {
+    from {background-color: gray;}
+    to {background-color: blueviolet;}
+}
+
+.box {
+    width: 250px;
+    height: 250px;
+    border: 1px solid black;
+    animation-name: changeColor;
+    animation-duration: 5s;
+}
+

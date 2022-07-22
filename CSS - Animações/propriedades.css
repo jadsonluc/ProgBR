@@ -1,0 +1,16 @@
+
+@keyframes changeColor {
+    0% {background-color: gray;}
+    50% {background-color: blueviolet; width: 250px; }
+    70% {background-color: brown; width: 270px; }
+    100% {background-color: black; width: 180px; height: 500px;}
+}
+
+.box {
+    width: 150px;
+    height: 250px;
+    border: 1px solid black;
+    animation-name: changeColor;
+    animation-duration: 15s;
+}
+
