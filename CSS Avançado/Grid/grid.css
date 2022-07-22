@@ -1,0 +1,27 @@
+.container {
+    color: white;
+    display: grid;
+    background-color: lightgray;
+    padding: 10px;
+    grid-template-rows: 50px 55px;
+    grid-template-columns: 1fr 2fr 1.5fr; /*Podemos definir os tamanhos proporcionais e fixos de cada coluna e linhas - 20% 50px ou fr(FRAÇÕES)*/
+    /*Podemos juntar as propriedades rows e columns com a atribuição com grid-template: nº de row / nº de columns, segue exemplo:*/
+    grid-template: 50px 55px / 1fr 2fr 1.5fr;
+}
+
+.r1 {
+    background-color: lightseagreen;
+}
+
+.r2 {
+    background-color: lightcoral;
+}
+
+.r3 {
+    background-color: lightslategray;
+}
+
+.rect {
+    padding-left: 5px;
+    border: 1px solid white;
+}

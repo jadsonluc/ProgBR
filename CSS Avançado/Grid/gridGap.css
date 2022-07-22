@@ -1,0 +1,29 @@
+.container {
+    color: white;
+    display: grid;
+    background-color: lightgray;
+    padding: 3px;
+    box-shadow: 1px 1px 4px  rgba(0, 0, 0, 0.441);
+   
+    grid-template: 50px 55px / 1fr 2fr 1.5fr;
+    grid-row-gap: 2px;
+    grid-column-gap: 2px; /*Ou podemos fazer juntando as duas propriedades acima, veja o exemplo abaixo:*/
+    grid-gap: 2.5px;
+}
+
+.r1 {
+    background-color: lightseagreen;
+}
+
+.r2 {
+    background-color: lightcoral;
+}
+
+.r3 {
+    background-color: lightslategray;
+}
+
+.rect {
+    /*padding-left: 5px;
+    border: 1px solid white;*/
+}

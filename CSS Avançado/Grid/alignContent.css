@@ -1,0 +1,35 @@
+.container {
+    color: white;
+    display: grid;
+    background-color: lightgray;
+    padding: 3px;
+    box-shadow: 1px 1px 4px  rgba(0, 0, 0, 0.441);
+    height: 300px;
+    border-radius: 5px;
+   
+    grid-template: auto auto / auto auto auto;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    grid-gap: 5px;
+}
+
+.r1 {
+    background-color: lightseagreen;
+}
+
+.r2 {
+    background-color: lightcoral;
+}
+
+.r3 {
+    background-color: lightslategray;
+}
+
+.rect {
+    width: 100px;
+    height: 100px;
+    border-radius: 3px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.26);
+}
