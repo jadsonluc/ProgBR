@@ -1,0 +1,31 @@
+.container {
+    display: flex;
+    /*flex-direction: column;
+    flex-wrap: wrap; - os dois comandos anteriores podem se transformar em apenas um com flex-flow*/
+    /*flex-flow: column-reverse nowrap;*/
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    background-color: gray;
+    height: 400px;
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.r1 {
+    background-color: lightsalmon;
+}
+
+.r2 {
+    background-color: lightgrey;
+}
+
+.r3 {
+    background-color: lightblue;
+}
+
+.rect {
+    width: 150px;
+    height: 110px;
+}
