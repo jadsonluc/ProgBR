@@ -1,0 +1,51 @@
+
+@keyframes changeColor {
+    0% {background-color: gray;}
+    50% {background-color: yellow; width: 250px; }
+    70% {background-color: brown; width: 270px; }
+    85% {background-color: black; width: 380px;}
+    100% {background-color: gray;}
+}
+
+@keyframes move {
+    0% {left: 0px;}
+    100% {left: 700px;}
+}
+
+.box {
+    position: relative;
+    width: 150px;
+    height: 250px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.359);
+    border: 1px solid black;
+    animation-name: changeColor ;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+}
+
+
+.div1 {
+    animation-timing-function: linear;/*Linear vai na mesma velocidade do ínicio ao fim*/
+    font-size: 3em;
+}
+
+.div2 {
+    animation-timing-function: ease;
+    font-size: 3em;
+}
+
+.div3 {
+    animation-timing-function: ease-in;
+    font-size: 3em;
+}
+
+.div4 {
+    animation-timing-function: ease-out;
+    font-size: 3em;
+}
+
+.div5 {
+    animation-timing-function: ease-in-out;
+    font-size: 3em;
+}

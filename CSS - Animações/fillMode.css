@@ -1,0 +1,21 @@
+
+@keyframes changeColor {
+    0% {background-color: gray;}
+    50% {background-color: yellow; width: 250px; }
+    70% {background-color: brown; width: 270px; }
+    85% {background-color: black; width: 180px; height: 500px;}
+    100% {background-color: gray;}
+}
+
+.box {
+    width: 150px;
+    height: 250px;
+    border: 1px solid black;
+    animation-name: changeColor;
+    animation-duration: 10s;
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.359);
+    animation-direction: normal;/*altera o sentido da animação, pode ser de tras pra frente ou de forma alternada*/
+    animation-fill-mode: both;/*backwards só funciona com delay*/
+}
+
