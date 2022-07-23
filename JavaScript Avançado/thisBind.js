@@ -17,6 +17,6 @@ let cat = {
 dog.speak()
 cat.speak()
 
-let bindedFunction = speakGeneric.bind(dog)/*Com o atributo bind eu declaro quem é o meu this  */
+let bindedFunction = speakGeneric.bind(dog)/*Com o atributo bind eu declaro quem é o meu this*/
 
 bindedFunction()
