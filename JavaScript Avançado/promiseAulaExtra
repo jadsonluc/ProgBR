@@ -1,0 +1,119 @@
+let myPromise = new Promise((resolve, reject)=> {
+    let nome = "Jadson"
+    if (nome === "Jadson"){
+        resolve("Usuário Jadson encontrado")
+    } else {
+        reject("Usuário não encontrado")
+    }
+    
+})
+
+myPromise.then((data)=>{
+    console.log(data)
+})
+
+//Enacdeamento de then´s 
+
+let myPromise2 = new Promise((resolve, reject)=> {
+    let nome = "Jadso"
+    if (nome === "Jadson"){
+        resolve("Usuário Jadson encontrado")
+    } else {
+        reject("Usuário não encontrado")
+    }
+    
+})
+
+myPromise2.then((data)=>{
+    return data.toLowerCase()
+}).then((stringModificada) => {
+   return stringModificada.toUpperCase()
+}).then((stringModificadaNovamente)=>{
+    console.log(stringModificadaNovamente)
+}).catch((err) => { 
+    console.log("Usuário não encontrado")
+})
+
+// Retorno do Catch: Para passar apenas mensagem de reject(erro) para o usuário do sistema.
+
+
+let myPromise3 = new Promise((resolve, reject)=> {
+    let nome = "João"
+    if (nome === "Jadson"){
+        resolve("Usuário Jadson encontrado")
+    } else {
+        reject({msg:"Usuário não encontrado Jadson você é muito gostoso!"})
+    }
+    
+})
+
+myPromise3.then((name) => {
+    console.log(name)
+}).catch((erro) => {
+    console.log(erro.msg)
+})
+
+//Resolver várias promessas de uma vez só!
+
+const p1 = new Promise((resolve, reject) => {
+    setTimeout(()=>{
+        resolve("p1 ok")
+    }, 10000)
+})
+
+const p2 = new Promise((resolve, reject) => {
+    setTimeout(()=> {
+        resolve("p2 ok")
+    }, 5000)
+})
+
+const p3 = new Promise((resolve, reject) => {
+   setTimeout(()=>{
+    resolve("p3 ok")
+   }, 4000)
+})
+
+const ps = [p1, p2, p3]
+
+const resolvAll = Promise.race([p1,p2,p3]).then((ok) => {
+    console.log(ok)
+})
+
+
+
+
+// Requisições na vida real
+
+let nome =["Jadson"]
+
+function inserirNomes(name) {
+    let promise = new Promise((resolve, reject)=> {
+        setTimeout(() => {
+            nome.push(name)
+            let error = false
+            if(!error){
+                return resolve()
+            } else {
+                reject({msg:"Usuário não inserido"})
+            }
+        }, 500)
+    })
+    return promise
+}
+
+function listaNomes(){
+    console.log(nome)
+}
+
+inserirNomes("João", "ana").then(listaNomes).catch((error) => {
+    console.log(error.msg)
+})
+
+//Fetch request na API do GitHub 
+
+
+
+
+
+
+
