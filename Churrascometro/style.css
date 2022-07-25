@@ -12,6 +12,7 @@
     padding: 20px;
     border-radius: 7px;
     margin-top: 10px;
+    box-shadow: 1px 1px 5px black;
 }
 
 input {
@@ -34,6 +35,9 @@ button {
 
 button:hover {
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.274);
+    background-color: white;
+    color: rgba(165, 42, 42, 0.685);
+    font-weight: bolder;
 }
 
 h1 {
