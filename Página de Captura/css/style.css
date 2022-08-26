@@ -78,7 +78,7 @@ footer {
     text-align: center;
 }
 
-.picture {
+.pictur {
     width: 150px;
 }
 
@@ -98,13 +98,13 @@ footer {
     font-size: 22px;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     .formContainer {
         float: none;
         margin: auto;
     }
 
-    .picture {
+    .pictur {
         width: 120px;
         display: inline-block;
         margin-bottom: 30px;
